@@ -20,13 +20,6 @@ import com.company.tracing.web.TraceIdWebFilter;
 @Configuration
 @AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE)
 public class TracingAutoConfiguration {
-    private static final Logger log = LoggerFactory.getLogger(TracingAutoConfiguration.class);
-
-    @PostConstruct
-    public void init() {
-        log.info(">>> TracingAutoConfiguration LOADED <<<"); // ← должно появиться в логах
-    }
-
     @Bean
     public TracingHooksInitializer tracingHooksInitializer() {
         return new TracingHooksInitializer();
