@@ -1,1 +1,1 @@
-ru.gosuslugi.tracing.autoconfigure.TracingAutoConfiguration
+com.company.tracing.autoconfigure.TracingAutoConfiguration
